@@ -3,11 +3,41 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Analizador de Texto</title> 
+<link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
+  <header>
+    <h1><strong>Analizador de Texto</strong></h1> 
+  <textarea name="user-input" placeholder="Ingrese texto..."></textarea>
+</header>
+ 
+  <ul class="contadores ">
+   <li  class="contadores" data-testid="word-count">Recuento de palabras: 0</li>
+   
+   <li  class="contadores" data-testid="character-count">Recuento de carácteres: 0</li>
+   
+   <li  class="contadores" data-testid="character-no-spaces-count">Recuento de carácteres sin espacios y signos de puntuación: 0</li>
+  
+   <li  class="contadores" data-testid="number-count">Recuento de números: 0</li>
+   
+   <li  class="contadores" data-testid="number-sum">Suma total de números: 0</li>
+
+   <li  class="contadores" data-testid="word-length-average">Longitud media de palabras: 0</li>
+   
+  </ul>
+  <br> 
+  <button id="reset-button" click="limpiarCajadeTexto()">Limpiar texto </button>
+  
+  <br> 
+  <footer>
+    
+    <p>Desarrolladora: Ketzali Arreola :)</p>
+
+  </footer>
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
